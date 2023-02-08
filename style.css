@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   background-color: rgba(232, 220, 220, 0.9);
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   height: 700px;
+}
+
+header {
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    position: fixed;
+    left: 35.2%;
+
+}
+
+.container {
+    background-color: aliceblue;
+    padding-top: 3rem;
+    padding-bottom: 7.2rem;
+    padding-left:4rem ;
+    padding-right: 4rem;
+    width: 260px;
+}
+
+.date-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.date2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date2 h2 {
+    margin-right: .5rem;
+}
+
+.date2 h5 {
+    margin-right: 6rem;
+}
+
+.date2 h4 {
+    font-weight: lighter;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    display: block;
+}
+
+.list {
+display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+#edit-input {
+    width: 100px;
+    background-color: aliceblue;
+    display: none;
+}
+
+#edit-input:focus {
+    outline: none;
+}
+
+button {
+    border: none;
+    display: block;
+}
+
+ul {
+    min-height: 30%;
+}
+
+.todo-div {
+    margin: 0.5rem;
+    display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+
+}
+.edit-btn {
+    margin-right: 1.5rem;
+    display: none;
+}
+
+li {
+    margin-top: 1rem;
+    display: block;
+}
+
+.fa-trash-can {
+    color: red;
+    cursor: pointer;
+    position: absolute;
+    right: 5rem;
+    margin-top: -.4rem;
+}
+
+.fa-check {
+    color: blue;
+    cursor: pointer;
+    position: absolute;
+    right: 3rem;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin-top: -.6rem;
+
+    
+}
+
+.check {
+    cursor: pointer;
+}
+
+.fa-plus {
+    background-color: rgba(5, 248, 5, 0.5);
+    margin-top: 5rem;
+padding-top:1rem ;
+padding-bottom: 1rem;
+padding-left: 1.5rem;
+padding-right: 1.5rem;
+    border-radius:50%; 
+    font-size: 2rem;
+    font-weight: lighter;
+    position: absolute;
+    left: 45%;
+    cursor: pointer;
+    color: rgb(114, 118, 118);
+}
+
+.fa-plus:hover {
+background-color:rgb(47, 131, 47);
+color: aliceblue;
+transition: .5s ease-out;
+}
+
+section {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+        display: none;
+    background: rgba(0, 0, 0, 0.6);
+
+}
+
+footer {
+position: fixed;
+top: 51%;
+left: 35.25%;
+background-color: rgba(61, 62, 62, 0.5);
+    z-index: 2;
+    display: none;
+    
+}
+
+.container2 {
+background-color: white;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        padding-left: 3.2rem;
+        padding-right: 2.3rem;
+}
+
+
+footer {
+    animation-name: animatemodal;
+        animation-duration: 1s;
+}
+
+@keyframes animatemodal {
+    from {
+      top:-50%;
+    }
+    to {
+     top:50%;
+    }
+}
+
+.fa-xmark {
+    position: absolute;
+    top: -12%;
+    left: 95%;
+    font-size: 1.4rem;
+    background-color:rgba(5, 248, 5, 0.5) ;
+    padding: .2rem .5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.fa-xmark:hover {
+    background-color: rgb(47, 131, 47);
+    color: aliceblue;
+    transition: .5s ease-out;
+
+}
+
+input {
+           border-top-style: none;
+            border-left-style: none;
+            border-right-style: none;
+       border-block-end-color: rgba(5, 248, 5, 0.5);
+       width: 300px;
+       display: block;
+}
+
+.no-outline:focus {
+    outline: none;
+}
+
+.submit {
+    margin-top: 1rem;
+    margin-left: 8rem;
+    border: none;
+    background-color: rgba(5, 248, 5, 0.5);
+    color: rgba(6, 96, 6, 0.5);
+    padding: .2rem .3rem ;
+    font-weight: bold;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(47, 131, 47);
+        color: aliceblue;
+        
+}
+
+
+
+
+
+
